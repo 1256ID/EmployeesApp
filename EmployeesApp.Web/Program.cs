@@ -7,7 +7,7 @@ namespace EmployeesApp.Web
             var builder = WebApplication.CreateBuilder(args);
             var app = builder.Build();
 
-            app.MapGet("/", () => "Hello World!");
+           // Test by Ivan
 
             app.Run();
         }
