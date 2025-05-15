@@ -8,6 +8,7 @@ namespace EmployeesApp.Web
             var app = builder.Build();
 
            // Test by Ivan
+           // test by stanislav
 
             app.Run();
         }
