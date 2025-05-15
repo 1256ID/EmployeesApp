@@ -5,11 +5,13 @@ namespace EmployeesApp.Web
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            var app = builder.Build();
 
-           // Test by Ivan
-           // test by stanislav
-           //Test by Bror
+            builder.Services.AddControllersWithViews();
+            var app = builder.Build();
+            app.MapControllers();
+            // Test by Ivan
+            // test by stanislav
+            //Test by Bror
 
             app.Run();
         }
