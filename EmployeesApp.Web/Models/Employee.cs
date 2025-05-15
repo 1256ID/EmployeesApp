@@ -1,10 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using EmployeesApp.Web.Attribute;
+using System.ComponentModel.DataAnnotations;
 
 namespace EmployeesApp.Web.Models
 {
     public class Employee
     {
         public int Id { get; set; }
+        [ValidNameAttribute(ErrorMessage=" test")]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name", Prompt = "Enter a name")]
         public string? Name { get; set; }
